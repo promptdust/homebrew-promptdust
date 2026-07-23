@@ -15,6 +15,9 @@ cask "promptdust" do
   desc "Read-only map of where AI tools leave data on your machine"
   homepage "https://promptdust.com/"
 
+  # The app's bundle declares Monterey as its minimum; mirror that here.
+  depends_on macos: ">= :monterey"
+
   app "PromptDust.app"
 
   # Uninstall cleanup (only runs on `brew uninstall --zap`); missing paths are skipped.
