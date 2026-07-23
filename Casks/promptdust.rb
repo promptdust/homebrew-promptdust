@@ -15,8 +15,9 @@ cask "promptdust" do
   desc "Read-only map of where AI tools leave data on your machine"
   homepage "https://promptdust.com/"
 
-  # The app's bundle declares Monterey as its minimum; mirror that here.
-  depends_on macos: ">= :monterey"
+  # The app's bundle declares Monterey as its minimum; mirror that here
+  # (symbol form means ">= that version").
+  depends_on macos: :monterey
 
   app "PromptDust.app"
 
