@@ -1,4 +1,4 @@
-# PromptDust desktop app (macOS). Pinned to v0.2.0. On each new release, bump
+# PromptDust desktop app (macOS). Pinned to v0.3.1. On each new release, bump
 # the version and replace the sha256 with the PromptDust_<version>_universal.dmg
 # digest from that release's SHA256SUMS.
 #
@@ -6,8 +6,8 @@
 # issue #41), so a first launch may still hit Gatekeeper. `brew install --cask`
 # clears the download quarantine, which reduces (does not remove) that friction.
 cask "promptdust" do
-  version "0.2.0"
-  sha256 "11379cdb20a83f242d720b47b690b0b794e562b6fde666b5f25e164395c40fc5"
+  version "0.3.1"
+  sha256 "772de38fb882be294154eb051b2ff4a1616b6be6a9b7fabae61800e9dd38b025"
 
   url "https://github.com/promptdust/promptdust/releases/download/v#{version}/PromptDust_#{version}_universal.dmg",
       verified: "github.com/promptdust/promptdust/"

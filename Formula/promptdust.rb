@@ -1,5 +1,5 @@
 # PromptDust CLI (`promptdust`). Pre-built binary formula: universal macOS,
-# x86_64 Linux. Pinned to the v0.2.0 release. On each new release, bump the
+# x86_64 Linux. Pinned to the v0.3.1 release. On each new release, bump the
 # version in the URLs and replace the sha256 digests with the values from that
 # release's SHA256SUMS.
 class Promptdust < Formula
@@ -12,20 +12,20 @@ class Promptdust < Formula
   # both per-arch blocks are required even though they're identical.
   on_macos do
     on_arm do
-      url "https://github.com/promptdust/promptdust/releases/download/v0.2.0/promptdust-macos-universal.tar.gz"
-      sha256 "4c8c10f9095197324634df3210f81384d47dd9a09ef6980642a097cd25dde26a"
+      url "https://github.com/promptdust/promptdust/releases/download/v0.3.1/promptdust-macos-universal.tar.gz"
+      sha256 "a648ee8afdc00326078cc05b3747e8c0287b175b08aee5da6e96a414f255873f"
     end
     on_intel do
-      url "https://github.com/promptdust/promptdust/releases/download/v0.2.0/promptdust-macos-universal.tar.gz"
-      sha256 "4c8c10f9095197324634df3210f81384d47dd9a09ef6980642a097cd25dde26a"
+      url "https://github.com/promptdust/promptdust/releases/download/v0.3.1/promptdust-macos-universal.tar.gz"
+      sha256 "a648ee8afdc00326078cc05b3747e8c0287b175b08aee5da6e96a414f255873f"
     end
   end
 
   # Linux is x86_64 only; no arm64 Linux archive is shipped.
   on_linux do
     on_intel do
-      url "https://github.com/promptdust/promptdust/releases/download/v0.2.0/promptdust-linux.tar.gz"
-      sha256 "b85c77bff10e48367094a903c51d892088273848ee0d745d3fd393a870b51da8"
+      url "https://github.com/promptdust/promptdust/releases/download/v0.3.1/promptdust-linux.tar.gz"
+      sha256 "f83f2616a4ed3e1001e2b60ecb70cda541d6b5dcbe9ca54ef6a0f4e720db42b1"
     end
   end
 
